@@ -1,7 +1,7 @@
 let tableBody = document.querySelector(".table-area .table tbody")
 let table = document.querySelector(".table-area")
 
-
+table.classList.add("d-none")
 let basket = JSON.parse(localStorage.getItem("basket"))
 
 function getItems() {
@@ -18,7 +18,7 @@ function getItems() {
             <td><button>Delete</button></td>
             </tr>`  
         }
-        
+        table.classList.remove("d-none")
 }
 
 getItems()
